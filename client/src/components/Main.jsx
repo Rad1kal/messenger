@@ -19,20 +19,20 @@ const Main = () => {
     if (!active) {
       e.preventDefault();
     }
-    const user = {
-      room: room,
-      name: name
-    }
+    // const user = {
+    //   room: room,
+    //   name: name
+    // }
     // Chat.socket.emit("lol", "hello");
     // console.log(JSON.stringify(user));
-    const response = await fetch("http://localhost:5007", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({room: room, name: name}),
-    });
-    console.log(response);
+    // const response = await fetch("http://localhost:5007", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({room: room, name: name}),
+    // });
+    // console.log(response);
   };
 
   return (
