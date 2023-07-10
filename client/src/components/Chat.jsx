@@ -9,7 +9,7 @@ import icon from "../images/emoji.svg";
 import styles from "../styles/Chat.module.css";
 import Messages from "./Messages";
 
-const socket = io.connect("http://localhost:5006"); // подключение сокета к серверу
+const socket = io.connect("https://messenger-326s.onrender.com"); // подключение сокета к серверу
 
 const Chat = () => {
   const { search } = useLocation(); // Получение параметров URL в виде строки
